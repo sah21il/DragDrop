@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag and Drop Example</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./boot.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+  <script src="./boot.js" ></script>
+
+</head>
+<body style="background-color: yellow;">
+<div class="head1">
+  <h1 style="font-family: 'Jersey 15', sans-serif;font-weight: 400;font-style: normal;">DRAG THE EMOJI!!</h1>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-8" style="margin-left: 6%;">
+      <h4 style="font-family: 'Jersey 15', sans-serif;font-weight: 400;font-style: normal;">Draggable Items</h4>
+      <div id="drag1" class="draggable" draggable="true" ondragstart="drag(event)">
+        <img src="8864305.png" alt="Placeholder Image 1">
+      </div>
+      <div id="drag2" class="draggable" draggable="true" ondragstart="drag(event)">
+        <img src="8864312.png" alt="Placeholder Image 2">
+      </div>
+      <div id="drag3" class="draggable" draggable="true" ondragstart="drag(event)">
+        <img src="8864285.png" alt="Placeholder Image 2">
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <h4 style="font-family: 'Jersey 15', sans-serif;font-weight: 400;font-style: normal;">Drag Items Here</h4>
+      <p style="font-family: 'Jersey 15', sans-serif;font-weight: 400;font-style: normal;">Joyful</p>
+      <div class="drag-container" id="container1" data-image="drag1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      </div>
+      <p style="font-family: 'Jersey 15', sans-serif;font-weight: 400;font-style: normal;">Bashful</p>
+      <div class="drag-container" id="container2" data-image="drag2" ondrop="drop(event)" ondragover="allowDrop(event)">
+      </div>
+      <p style="font-family: 'Jersey 15', sans-serif;font-weight: 400;font-style: normal;">Angel</p>
+      <div class="drag-container" id="container3" data-image="drag3" ondrop="drop(event)" ondragover="allowDrop(event)">
+      </div>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
